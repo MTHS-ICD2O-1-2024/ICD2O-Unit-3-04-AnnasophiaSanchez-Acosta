@@ -9,13 +9,13 @@
 /**
  * This function calculates volume of a Sphere.
  */
-function calculateVolumeOfSphere() {
+function calculateFahrenheittoCelsius() {
   // input
-  const theRadious = parseFloat(document.getElementById("radious").value)
+  const Fahrenheit = parseFloat(document.getElementById("degresFahrenheit").value)
   // process
-  const volumeOfSphere=  (4 / 3) * (Math.PI) * (theRadious **3)
+  const degresCelsius =  (Fahrenheit- 32) * (5/9)
 
   // output
-  document.getElementById("volume").innerHTML =
-    "Volume is: " + `${volumeOfSphere.toFixed(2)}` + " cm&sup3"
+  document.getElementById("temperature").innerHTML =
+    "Temperature is: " + `${degresCelsius.toFixed(2)}` + " °C "
 }
